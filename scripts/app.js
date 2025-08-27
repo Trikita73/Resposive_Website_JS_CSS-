@@ -6,5 +6,13 @@ if (burgerMenu) {
 
     burgerMenu.addEventListener('click', menu => {
         burgerMenu.classList.toggle('active')
+
+        if(burgerMenu.classList.contains('active')) {
+            menuBackground.classList.add('active')
+            mainMenu.classList.add('active')
+        } else {
+            menuBackground.classList.remove('active')
+            mainMenu.classList.remove('active')
+        }
     })
 }
