@@ -20,6 +20,7 @@
     --gradient-2: linear-gradient(0deg, var(--gradient-base));
 
     --transition: all .5s;
+    --transition-accordion: all 1s;
     --transition-mnu: 1s cubic-bezier(.8, 0, .1, 1);
     --radius: 8px;
 }

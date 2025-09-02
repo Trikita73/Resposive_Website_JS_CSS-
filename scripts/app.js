@@ -1,3 +1,4 @@
+// Menu
 const burgerMenu = document.querySelector('.mnu-button__menu')
 
 if (burgerMenu) {
@@ -16,3 +17,25 @@ if (burgerMenu) {
         }
     })
 }
+
+
+// Parallax
+gsap.utils.toArray('[data-parallax-wrapper]').forEach(container => {
+    const img = container.querySelector('[data-parallax-target]')
+
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: container,
+            scrub: true,
+        }
+    })
+
+    tl.fromTo(img, {
+        yPersent: -15,
+        ease: 'none'
+    }, {
+        yPersent: 15,
+        ease: 'none'
+    })
+})
+
