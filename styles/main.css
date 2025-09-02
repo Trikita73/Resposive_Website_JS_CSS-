@@ -303,6 +303,15 @@ ul {
     background: #180224;
     opacity: .35;
 }
+[data-parallax-target] {
+    height: 120%;
+    width: 110%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    top: -10%;
+    transform-origin: 50%, 50%;
+}
 .accordion__col.active {
     width: 100%;
     flex: 5;

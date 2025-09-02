@@ -39,3 +39,15 @@ gsap.utils.toArray('[data-parallax-wrapper]').forEach(container => {
     })
 })
 
+// accordion
+
+const accordionCol = document.querySelectorAll('.accordion__col')
+accordionCol.forEach(col => {
+    col.addEventListener('mouseenter', () => {
+        accordionCol.forEach(c => {
+            c.classList.remove('active')
+            col.classList.add('active')
+        })
+    })
+})
+
