@@ -427,3 +427,36 @@ ul {
     transition: var(--transition);
     
 }
+.btn-secondary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    transition: var(--transition);
+}
+.btn-secondary:hover {
+    color: transparent;
+
+}
+.btn-secondary:hover::after {
+    background: rgba(225, 255, 255, .05);
+    transform: scale(1.05);
+}
+.btn-secondary span {
+    position: relative;
+}
+.btn-secondary span::after {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-1);
+    text-fill-color: transparent;
+    --webkit-text-fill-color: transparent;
+    background-color: text;
+    transition: var(--transition);
+    opacity: 0;
+}
+.btn-secondary:hover span::after {
+    opacity: 1;
+}
