@@ -20,6 +20,7 @@
     --gradient-2: linear-gradient(0deg, var(--gradient-base));
     --gradient-3: linear-gradient(94deg, #fff -2%, var(--color-gradient-7) 60%);
 
+    --blending: hard-light;
     --circle-size: 80%;
     --transition: all .5s;
     --transition-accordion: all 1s;
