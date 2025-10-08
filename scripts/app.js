@@ -23,26 +23,25 @@ if (burgerMenu) {
 
 // Parallax
 gsap.utils.toArray('[data-parallax-wrapper]').forEach(container => {
-    const img = container.querySelector('[data-parallax-target]')
+  const img = container.querySelector('[data-parallax-target]')
 
-    const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: container,
-            scrub: true,
-        }
-    })
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: container,
+      scrub: true
+    }
+  })
 
-    tl.fromTo(img, {
-        yPersent: -15,
-        ease: 'none'
-    }, {
-        yPersent: 15,
-        ease: 'none'
-    })
+  tl.fromTo(img, {
+    yPercent: -15,
+    ease: 'none'
+  }, {
+    yPercent: 15,
+    ease: 'none'
+  })
 })
 
 // accordion
-
 const accordionCol = document.querySelectorAll('.accordion__col')
 accordionCol.forEach(col => {
     col.addEventListener('mouseenter', () => {
@@ -63,7 +62,7 @@ function raf(time) {
 requestAnimationFrame(raf)
 
 
-
+// background animation
 function globalGradient() {
     const interBubble = document.querySelector('.interactive')
 
